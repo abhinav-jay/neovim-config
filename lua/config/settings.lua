@@ -2,6 +2,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.o.cursorline = true
 vim.o.scrolloff = 10
+vim.o.showtabline = 2
 vim.keymap.set("n", "<leader>o", "za", { desc = "toggle fold" })
 vim.api.nvim_set_keymap(
 	"t",
@@ -54,4 +55,4 @@ for _, ls in ipairs(language_servers) do
 	})
 end
 require("ufo").setup()
-vim.opt.shell = "/usr/bin/fish"
+vim.opt.shell = "~/git/App/Git/git-bash.exe"
