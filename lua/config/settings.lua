@@ -62,6 +62,4 @@ require("ufo").setup()
 vim.opt.shell = "~/git/App/Git/git-bash.exe"
 
 -- Keymap to open custom_floating_cmdline
-vim.keymap.set("n", "<leader>:", function()
-	require("floating_command_line").open()
-end, { noremap = true, silent = true })
+require("floating_cmdline").setup()
