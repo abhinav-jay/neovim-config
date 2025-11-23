@@ -7,7 +7,7 @@ return {
 				icons_enabled = true,
 				theme = "auto",
 				component_separators = { left = "|", right = "|" },
-				section_separators = { left = "", right = "" }, -- slanted edges
+				-- section_separators = { left = "", right = "" }, -- slanted edges
 				disabled_filetypes = { statusline = {}, winbar = {} },
 				always_divide_middle = true,
 				globalstatus = true,

@@ -12,9 +12,10 @@ vim.api.nvim_set_keymap(
 )
 vim.keymap.set("n", "H", "<CMD>tabprev<CR>")
 vim.keymap.set("n", "L", "<CMD>tabnext<CR>")
-vim.keymap.set("n", "T", "<CMD>tabnew<CR><leader>ff")
-vim.keymap.set("n", "<leader>d", "<CMD>bd<CR>")
+vim.keymap.set("n", "<leader>t", "<CMD>tabnew | Oil<CR>")
+vim.keymap.set("n", "<leader>d", "<CMD>bw<CR>")
 vim.keymap.set("n", "<leader>te", "<CMD>ToggleTerm<CR>", { desc = "open terminal" })
+vim.keymap.set("n", "<leader>fn", "<CMD>Nerd<CR>")
 vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "go up" })
 vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "go down" })
 vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "go right" })
@@ -61,5 +62,5 @@ end
 require("ufo").setup()
 vim.opt.shell = "~/git/App/Git/git-bash.exe"
 
--- Keymap to open custom_floating_cmdline
-require("floating_cmdline").setup()
+-- Add custom plugins
+require("popup_notifications")
