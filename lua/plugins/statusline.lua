@@ -18,14 +18,20 @@ return {
 				},
 			},
 			sections = {
-				-- Only show first letter of mode
 				lualine_a = {
-					{
-						"mode",
-						fmt = function(str)
-							return str:sub(1, 1) -- first letter
-						end,
-					},
+					function()
+						local mode = vim.fn.mode() -- Get the current mode
+						local icons = {
+							n = "  ",
+							i = " 󰏫 ",
+							v = "  ",
+							V = "  ",
+							c = "  ",
+							R = "  R",
+							t = "  ",
+						}
+						return icons[mode] or "  " -- Default icon if mode is not mapped
+					end,
 				},
 				lualine_b = { "branch", "diff", "diagnostics" },
 				lualine_c = {

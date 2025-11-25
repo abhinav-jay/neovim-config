@@ -12,7 +12,9 @@ vim.api.nvim_set_keymap(
 )
 vim.keymap.set("n", "H", "<CMD>tabprev<CR>")
 vim.keymap.set("n", "L", "<CMD>tabnext<CR>")
-vim.keymap.set("n", "<leader>t", "<CMD>tabnew | Oil<CR>")
+vim.keymap.set("n", "<leader>v", "<CMD>vsplit<CR>")
+vim.keymap.set("n", "<leader>h", "<CMD>split<CR>")
+vim.keymap.set("n", "<leader>t", "<CMD>tabnew<CR>")
 vim.keymap.set("n", "<leader>d", "<CMD>bw<CR>")
 vim.keymap.set("n", "<leader>te", "<CMD>ToggleTerm<CR>", { desc = "open terminal" })
 vim.keymap.set("n", "<leader>fn", "<CMD>Nerd<CR>")
@@ -60,7 +62,7 @@ for _, ls in ipairs(language_servers) do
 	})
 end
 require("ufo").setup()
-vim.opt.shell = "~/git/App/Git/git-bash.exe"
+vim.opt.shell = "/usr/bin/fish"
 
 -- Add custom plugins
-require("popup_notifications")
+-- require("popup_notifications")

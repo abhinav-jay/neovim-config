@@ -14,7 +14,7 @@ return {
 			line = function(line)
 				return {
 					{
-						{ "  ", hl = theme.fill },
+						{ "  ", hl = theme.fill },
 						line.sep("", theme.head, theme.fill),
 					},
 					line.tabs().foreach(function(tab)
