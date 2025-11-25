@@ -1,6 +1,7 @@
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.o.cursorline = true
+vim.o.cursorcolumn = true
 vim.o.scrolloff = 10
 vim.o.showtabline = 2
 vim.keymap.set("n", "<leader>o", "za", { desc = "toggle fold" })
@@ -14,8 +15,8 @@ vim.keymap.set("n", "H", "<CMD>tabprev<CR>")
 vim.keymap.set("n", "L", "<CMD>tabnext<CR>")
 vim.keymap.set("n", "<leader>v", "<CMD>vsplit<CR>")
 vim.keymap.set("n", "<leader>h", "<CMD>split<CR>")
-vim.keymap.set("n", "<leader>t", "<CMD>tabnew<CR>")
-vim.keymap.set("n", "<leader>d", "<CMD>bw<CR>")
+vim.keymap.set("n", "<leader>t", ":tabnew<CR>")
+vim.keymap.set("n", "<leader>d", "<CMD>bw!<CR>")
 vim.keymap.set("n", "<leader>te", "<CMD>ToggleTerm<CR>", { desc = "open terminal" })
 vim.keymap.set("n", "<leader>fn", "<CMD>Nerd<CR>")
 vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "go up" })

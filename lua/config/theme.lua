@@ -1,0 +1,16 @@
+local colors = {
+	bg = "#1a1b26",
+	fg = "#c0caf5",
+	saffron = "#fca561",
+	green = "#9ece6a",
+	indigo = "#7aa2f7",
+	grey = "#565f89",
+	white = "#ffffff",
+	red = "#f7768e",
+	yellow = "#e0af68",
+	cyan = "#0db9d7",
+	magenta = "#bb9af7",
+	orange = "#ff9e64",
+	teal = "#1abc9c",
+	brown = "#b08b4f",
+}
