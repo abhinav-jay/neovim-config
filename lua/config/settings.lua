@@ -66,4 +66,5 @@ require("ufo").setup()
 vim.opt.shell = "/usr/bin/fish"
 
 -- Add custom plugins
--- require("popup_notifications")
+require("popup_notifications")
+vim.keymap.set("n", "<leader>ft", require("telescope.builtin").colorscheme)
