@@ -55,7 +55,7 @@ return {
 		},
 		config = function(_, opts)
 			require("tokyonight").setup(opts)
-			vim.cmd("colorscheme red")
+			vim.cmd("colorscheme github")
 		end,
 	},
 }
