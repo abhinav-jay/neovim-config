@@ -1,18 +1,20 @@
 local M = {}
 
-vim.o.termguicolors = true
+vim.opt.termguicolors = true
 
 local colors = {
-	bg = "#1c1c2c",
-	fg = "#7c7c9c",
-	saffron = "#FF9933",
-	green = "#138808",
-	navy = "#7aa2f7",
-	gray = "#8080a0",
-	light_orange = "#FFA64D",
-	comment = "#7C7C9C",
-	visual_bg = "#333353",
-	violet = "#7F00FF",
+	bg = "#320305",
+	fg = "#ffba08",
+	saffron = "#f48c06",
+	green = "#d03040",
+	blue = "#d03040",
+	navy = "#e85d04",
+	gray = "#e55555",
+	light_orange = "#f48c06",
+	comment = "#a55555",
+	visual_bg = "#6a040f",
+	violet = "#e55555",
+	light_blue = "#d03040",
 }
 
 -- Clear highlights
@@ -22,11 +24,11 @@ if vim.fn.exists("syntax_on") then
 end
 
 vim.o.background = "dark"
-vim.g.colors_name = "india"
+vim.g.colors_name = "france"
 
 -- -- Normal and UI
-vim.cmd(string.format("hi Visual guifg=%s guibg=%s", colors.fg, colors.visual_bg))
 vim.cmd(string.format("hi Normal       guifg=%s guibg=%s", colors.fg, colors.bg))
+vim.cmd(string.format("hi Visual       guibg=%s guibg=%s", colors.fg, colors.visual_bg))
 vim.cmd(string.format("hi CursorLine   guibg=%s", colors.visual_bg))
 vim.cmd(string.format("hi CursorColumn guibg=%s", colors.visual_bg))
 vim.cmd(string.format("hi LineNr       guifg=%s guibg=%s", colors.gray, colors.bg))

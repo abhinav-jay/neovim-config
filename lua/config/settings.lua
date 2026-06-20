@@ -1,3 +1,8 @@
+-- remove all notifications
+vim.notify = function() end
+
+vim.opt.shortmess:append("sI")
+
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.o.cursorline = true
@@ -66,5 +71,5 @@ require("ufo").setup()
 vim.opt.shell = "/usr/bin/fish"
 
 -- Add custom plugins
-require("popup_notifications")
+-- require("neonotify.nivm")
 vim.keymap.set("n", "<leader>ft", require("telescope.builtin").colorscheme)
